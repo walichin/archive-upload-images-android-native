@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:id="@+id/negative_linear_layout">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_height="600dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Imgnro"
+                android:id="@+id/textView4"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp" />
+
+            <EditText
+                    android:layout_width="336dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/newImgnro"
+                    android:layout_marginLeft="10dp" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Caja"
+                    android:id="@+id/textView3"
+                    android:layout_marginLeft="10dp" />
+
+            <EditText
+                    android:layout_width="336dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/newBox"
+                    android:layout_marginLeft="10dp" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Seccion"
+                    android:id="@+id/textView"
+                    android:layout_marginLeft="10dp" />
+
+            <EditText
+                    android:layout_width="336dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/newSection"
+                    android:layout_marginLeft="10dp" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Ubicacion"
+                    android:id="@+id/textView2"
+                    android:layout_marginLeft="10dp" />
+
+            <EditText
+                    android:layout_width="336dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/newLocation"
+                    android:layout_marginLeft="10dp" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Alto"
+                    android:id="@+id/textView5"
+                    android:layout_marginLeft="10dp" />
+
+            <EditText
+                    android:layout_width="336dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/newHeight"
+                    android:layout_marginLeft="10dp" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Ancho"
+                    android:id="@+id/textView6"
+                    android:layout_marginLeft="10dp" />
+
+            <EditText
+                    android:layout_width="336dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/newWidth"
+                    android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Espesor"
+                android:id="@+id/textView7"
+                android:layout_marginLeft="10dp" />
+
+            <EditText
+                android:layout_width="336dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/newThickness"
+                android:layout_marginLeft="10dp" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Esta restaurado?"
+                android:id="@+id/newIs_restored"
+                android:checked="false"
+                android:layout_marginLeft="10dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:weightSum="1">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="&lt;&lt; Anterior"
+                    android:id="@+id/btnPrev2"
+                    android:layout_marginLeft="10dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cancelar"
+                    android:id="@+id/btnCancel2"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" />
+
+                <Button
+                    android:layout_width="142dp"
+                    android:layout_height="wrap_content"
+                    android:text="Siguiente >>"
+                    android:id="@+id/btnNext2" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

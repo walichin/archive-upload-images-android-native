@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:id="@+id/search_linear_layout">
+
+    <Button
+        android:layout_width="105dp"
+        android:layout_height="38dp"
+        android:text="Nuevo"
+        android:id="@+id/btnNewNegative"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="40dp"
+        android:background="#FF4081"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="ID del Negativo"
+        android:id="@+id/textView4"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:layout_width="336dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtNegativeId"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Nombre de la Imagen"
+        android:id="@+id/textView3"
+        android:layout_marginLeft="10dp" />
+
+    <EditText
+        android:layout_width="336dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtFileName"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Numero de Imagen"
+        android:id="@+id/textView"
+        android:layout_marginLeft="10dp" />
+
+    <EditText
+        android:layout_width="336dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtImgnro"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Caja"
+        android:id="@+id/textView2"
+        android:layout_marginLeft="10dp" />
+
+    <EditText
+        android:layout_width="336dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtBox"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Seccion"
+        android:id="@+id/textView5"
+        android:layout_marginLeft="10dp" />
+
+    <EditText
+        android:layout_width="336dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtSection"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Ubicacion"
+        android:id="@+id/textView6"
+        android:layout_marginLeft="10dp" />
+
+    <EditText
+        android:layout_width="336dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtLocation"
+        android:layout_marginLeft="10dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buscar"
+            android:id="@+id/btnSearch"
+            android:layout_marginLeft="10dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Limpiar"
+            android:id="@+id/btnClear" />
+    </LinearLayout>
+
+</LinearLayout>

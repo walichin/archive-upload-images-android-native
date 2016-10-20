@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:id="@+id/card_linear_layout">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="131dp"
+            android:layout_height="wrap_content"
+            android:text="Ingresar Otra Ficha"
+            android:id="@+id/btnNewCard"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.13" />
+
+        <Button
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:text="Eliminar Esta Ficha"
+            android:id="@+id/btnDeleteCard"
+            android:layout_weight="0.16"
+            android:paddingLeft="10dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Numero de Ficha"
+                    android:id="@+id/textView99"
+                    android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp" />
+
+            <EditText
+                    android:layout_width="336dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/newCardNumber"
+                    android:layout_marginLeft="15dp" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Titulo"
+                    android:id="@+id/textView"
+                    android:layout_marginLeft="15dp" />
+
+            <EditText
+                    android:layout_width="336dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/newTitle"
+                    android:layout_marginLeft="15dp" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Descripcion"
+                    android:id="@+id/textView2"
+                    android:layout_marginLeft="15dp" />
+
+            <EditText
+                    android:layout_width="336dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/newDescription"
+                    android:layout_marginLeft="15dp" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Observacion"
+                    android:id="@+id/textView5"
+                    android:layout_marginLeft="15dp" />
+
+            <EditText
+                    android:layout_width="336dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/newObservation"
+                    android:layout_marginLeft="15dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="&lt;&lt; Anterior"
+                    android:id="@+id/btnPrev3"
+                    android:layout_marginLeft="10dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cancelar"
+                    android:id="@+id/btnCancel3"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" />
+
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="38dp"
+                    android:text="Grabar Datos"
+                    android:id="@+id/btnSave"
+                    android:background="#FF4081"
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Carga de Negativos</string>
+
+    <string name="card_login_activity_label">Inicio de Sesion</string>
+    <string name="card_search_activity_label">Carga de Negativos</string>
+    <string name="card_list_activity_label">Lista de Negativos</string>
+    <string name="card_detail_activity_label">Detalle del Negativo</string>
+    <string name="negative_image_activity_label">Seleccion de Imagen</string>
+    <string name="negative_detail_activity_label">Datos del Negativo</string>
+    <string name="negative_cards_activity_label">Datos de la Ficha (1/1)</string>
+
+    <string name="action_settings">Configuracion</string>
+    <string name="image_button_content_description">Change state of section</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Usuario</string>
+    <string name="prompt_password">Contrasena</string>
+    <string name="action_sign_in">Iniciar Sesion</string>
+    <string name="action_sign_in_short">Iniciar Sesion</string>
+    <string name="error_invalid_email">El usuario es invalido</string>
+    <string name="error_invalid_password">La contrasena es demasiado corta</string>
+    <string name="error_incorrect_password">La contrasena es incorrecta</string>
+    <string name="error_field_required">Este dato es requerido</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+</resources>

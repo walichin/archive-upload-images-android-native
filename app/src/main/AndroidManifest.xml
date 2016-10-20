@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.walichin.archivoalejos.carganegativos" >
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme2">
+
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".CardSearchActivity"
+            android:launchMode="singleInstance"
+            android:label="@string/card_search_activity_label"
+            android:parentActivityName=".LoginActivity"
+            android:theme="@style/AppTheme2">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LoginActivity" />
+        </activity>
+
+
+        <activity
+            android:name=".NegativeImageActivity"
+            android:launchMode="singleInstance"
+            android:label="@string/negative_image_activity_label"
+            android:parentActivityName=".CardSearchActivity"
+            android:theme="@style/AppTheme2">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".CardSearchActivity" />
+        </activity>
+
+        <activity
+            android:name=".FileBrowserActivity"
+            android:parentActivityName=".NegativeImageActivity"
+            android:theme="@style/AppTheme2">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".NegativeImageActivity" />
+        </activity>
+
+        <activity
+            android:name=".NegativeDetailActivity"
+            android:launchMode="singleInstance"
+            android:label="@string/negative_detail_activity_label"
+            android:parentActivityName=".NegativeImageActivity"
+            android:theme="@style/AppTheme2">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".NegativeImageActivity" />
+        </activity>
+
+        <activity
+            android:name=".NegativeCardsActivity"
+            android:launchMode="singleInstance"
+            android:label="@string/negative_cards_activity_label"
+            android:parentActivityName=".NegativeDetailActivity"
+            android:theme="@style/AppTheme2">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".NegativeDetailActivity" />
+        </activity>
+
+
+        <activity
+            android:name=".CardListActivity"
+            android:label="@string/card_list_activity_label"
+            android:parentActivityName=".CardSearchActivity"
+            android:theme="@style/AppTheme2">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".CardSearchActivity" />
+        </activity>
+
+        <activity
+            android:name=".CardDetailActivity"
+            android:label="@string/card_detail_activity_label"
+            android:parentActivityName=".CardListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".CardListActivity" />
+        </activity>
+
+    </application>
+
+</manifest>
